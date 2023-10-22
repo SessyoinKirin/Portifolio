@@ -1,0 +1,39 @@
+.containerBr{
+    width:100%;
+    position:absolute;
+    top:50%;
+
+    transform:translateY(-50%);
+    text-align:center;
+    /*color:#343434;*/
+}
+.containerBr h1{
+    font-size:250px;
+    margin:0;
+    font-weight:900;
+    letter-spacing:20px;
+}
+
+.containerBr h2{
+    margin:0;
+    color:#242424;
+    font-size:30px;
+}
+
+.containerBr p{
+    margin-top:0;
+    /*color:#242424;*/
+    font-size:20px;
+}
+
+.containerBr a{
+    text-decoration:none;
+    background: #FF3305;
+    color:#fff;
+    padding:12px 24px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size:14px;
+    text-transform:uppercase;
+    transition: 0.4s;
+}

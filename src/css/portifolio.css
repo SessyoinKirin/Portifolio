@@ -1,0 +1,178 @@
+.box {
+    width: 70vw;
+    height: 60vh;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.leftPart{
+    width: 20vw;
+    height: 34vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.perfil{
+    width: 12vw;
+    border-radius: 25px;
+}
+.rightPart{
+    width: 50vw;
+}
+.topPart{
+    width: 50vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+.bottomPart{
+    width: 50vw;
+    height: 40vh;
+}
+.nome{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-style: italic;
+}
+.description{
+    font-size: 1.5vw;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+p{
+    margin: 0;
+}
+.coDescription{
+    font-size: 1vw;
+    margin-top: 5px;
+    padding: 3px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.topPartCria{
+    width: 70vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topPartProj{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 9vw;
+}
+.bottomPartCria{
+    width: 70vw;
+    height: 40vh;
+}
+.coluna{
+    display: flex;
+    flex-direction: column;
+}
+.exibirImg{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
+    width: 70vw;
+}
+.itemImg{
+    width: 15vw;
+    padding: 0 2vw;
+    margin-top: 4vh;
+}
+.imgCria{
+    width: 15vw;
+    height: 18vh;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.justyCenter{
+    display: flex;
+    justify-content: center;
+}
+.bottomPartComun{
+    height: 40vh;
+    padding: 0 9vw;
+}
+.indent{
+    text-indent: 5%;
+}
+.iconComun{
+    width: 7vw;
+    cursor: pointer;
+}
+.exibirImgComun{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
+}
+.itemIcon{
+    padding: 0 6vw;
+    margin-top: 8vh;
+}
+.itemProj{
+    padding: 0 6vw;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.imgProj{
+    height: 21vh;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bottomPartExp{
+    height: 40vh;
+    padding: 0 9vw;
+}
+.itemIconExp{
+    padding: 0 2vw;
+    margin-top: 11vh;
+}
+.iconExp{
+    width: 5vw;
+}
+.notfound{
+    flex-direction: column;
+}
+
+.notfound h1{
+    font-size: 20vw;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.notfound h2{
+    margin: 0;
+    color: white;
+    font-size: 3vw;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.notfound p{
+    color: white;
+}
+.spanMaior{
+    font-size: 3vw;
+    color: gray;
+}
+.centroAbs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

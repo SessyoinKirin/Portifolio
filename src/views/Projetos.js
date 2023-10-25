@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 import '../css/portifolio.css';
 
 export default function Projetos() {
   const [media, setMedia] = useState(window.innerWidth);
-  const [element1Visible, setElement1Visible] = useState(true);
-
   useEffect(() => {
     const handleResize = () => {
       setMedia(window.innerWidth);
@@ -16,10 +16,6 @@ export default function Projetos() {
     };
   }, []);
 
-  const toggleElements = () => {
-    setElement1Visible(!element1Visible);
-  };
-
   return (
     <div className='box coluna'>
       <div className='topPartProj'>
@@ -27,50 +23,75 @@ export default function Projetos() {
           Nos projetos de TCC, sou responsável em Front-End, trabalhar com estilização da página e escrever as principais funções de hooks em React Native. Confira os projetos abaixo, ao clicá-los será redirecionado para seu repositório em Github.
         </p>
       </div>
-      <div className='bottomPartCria scroll'>
-        <ul className='exibirImgComun scrollElement'>
-          <ol className={`itemProj ${element1Visible ? 'element1' : 'hidden'}`}>
-            <img
-              src={require('../img/TCCHTML.png')}
-              alt='HTML'
-              className='imgProj telaGrande'
-              onClick={() => {
-                window.open('https://github.com/SessyoinKirin/ProjetoInterdisciplinar', '_blank');
-              }}
-            />
-            <p className='coDescription justyCenter'>
-              HTML/CSS/JS
-            </p>
-          </ol>
-          <ol className={`itemProj ${!element1Visible ? 'element2' : 'hidden'}`}>
-            <img
-              src={require('../img/TCCReactNative.png')}
-              alt='RN'
-              className='imgProj'
-              onClick={() => {
-                window.open('https://github.com/SessyoinKirin/Trabalho-de-Conclusao', '_blank');
-              }}
-            />
-            <p className='coDescription justyCenter'>
-              React Native
-            </p>
-          </ol>
-        </ul>
+      <div className='bottomPartCria'>
+        {
+          media > 768 && (
+            <div className='exibirImgComun'>
+              <div className='itemProj'>
+                <img
+                  src={require('../img/TCCHTML.png')}
+                  alt='HTML'
+                  className='imgProj telaGrande'
+                  onClick={() => {
+                    window.open('https://github.com/SessyoinKirin/ProjetoInterdisciplinar', '_blank');
+                  }}
+                />
+                <p className='coDescription justyCenter'>
+                  HTML/CSS/JS
+                </p>
+              </div>
+              <div className='itemProj'>
+                <img
+                  src={require('../img/TCCReactNative.png')}
+                  alt='RN'
+                  className='imgProj'
+                  onClick={() => {
+                    window.open('https://github.com/SessyoinKirin/Trabalho-de-Conclusao', '_blank');
+                  }}
+                />
+                <p className='coDescription justyCenter'>
+                  React Native
+                </p>
+              </div>
+            </div>
+          )
+        }
         {media <= 768 && (
-          <div className='mobile'>
-            <img
-              src={require('../img/anterior.svg').default}
-              alt='ant'
-              className='seta'
-              onClick={toggleElements}
-            />
-            <img
-              src={require('../img/next.svg').default}
-              alt='next'
-              className='seta'
-              onClick={toggleElements}
-            />
-          </div>
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={1}
+          >
+            <SwiperSlide>
+            <div className='itemProj'>
+                <img
+                  src={require('../img/TCCHTML.png')}
+                  alt='HTML'
+                  className='imgProj telaGrande'
+                  onClick={() => {
+                    window.open('https://github.com/SessyoinKirin/ProjetoInterdisciplinar', '_blank');
+                  }}
+                />
+                <p className='coDescription justyCenter'>
+                  HTML/CSS/JS
+                </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+            <div className='itemProj'>
+                <img
+                  src={require('../img/TCCReactNative.png')}
+                  alt='RN'
+                  className='imgProj telaMenor'
+                  onClick={() => {
+                    window.open('https://github.com/SessyoinKirin/Trabalho-de-Conclusao', '_blank');
+                  }}
+                />
+                <p className='coDescription justyCenter'>
+                  React Native
+                </p>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         )}
       </div>
     </div>

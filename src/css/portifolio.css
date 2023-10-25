@@ -12,16 +12,18 @@
 
 .leftPart {
     width: 20vw;
-    height: 34vh;
+    /* height: 34vh; */
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    padding-top: 3vh;
 }
 
 .perfil {
-    width: 12vw;
+    width: 10vw;
     border-radius: 25px;
+    border: 1px solid white;
 }
 
 .rightPart {
@@ -73,11 +75,11 @@ p {
 }
 
 .topPartProj {
-    height: 20vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 9vw;
+    padding: 2vw 9vw;
 }
 
 .bottomPartCria {
@@ -210,6 +212,7 @@ p {
 @media (max-width: 768px) {
     .box {
         flex-direction: column;
+        justify-content: space-around;
     }
 
     .perfil {
@@ -219,6 +222,7 @@ p {
 
     .leftPart {
         width: 70vw;
+        padding-top: 0;
     }
 
     .coDescription {
@@ -243,8 +247,9 @@ p {
     }
 
     .bottomPart {
-        width: 70vw;
+        width: auto;
         padding: 6vw;
+        height: auto;
     }
 
     .description {
@@ -266,35 +271,39 @@ p {
         justify-content: center;
     }
 
-    .scroll {
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-
-    .element1 {
-        display: flex;
-    }
-
-    .element2 {
-        display: flex;
-    }
-
     .telaGrande {
         height: 12vh;
     }
-    .mobile{
-        display: flex;
-    justify-content: space-around;
+
+    .hidden {
+        display: none;
     }
 
-    .seta {
-        width: 11vw;
+    .itemImg {
+        width: auto;
+        padding: 0 5vw;
+        margin-top: 4vh;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
     }
-    .hidden{
-        display: none;
+
+    .imgCria {
+        width: auto;
+        height: 18vh;
+        border: 1px solid white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .bottomPartCria {
+        height: 35vh;
+    }
+    .itemProj{
+        justify-content: flex-end;
+        align-items: center;
+        height: 21vh;
+    }
+    .telaMenor{
+        width: 21vw;
     }
 }

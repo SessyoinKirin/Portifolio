@@ -9,7 +9,6 @@ export default function Projetos() {
     const handleResize = () => {
       setMedia(window.innerWidth);
     };
-
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -62,7 +61,7 @@ export default function Projetos() {
             slidesPerView={1}
           >
             <SwiperSlide>
-            <div className='itemProj'>
+              <div className='itemProj'>
                 <img
                   src={require('../img/TCCHTML.png')}
                   alt='HTML'
@@ -77,7 +76,7 @@ export default function Projetos() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className='itemProj'>
+              <div className='itemProj'>
                 <img
                   src={require('../img/TCCReactNative.png')}
                   alt='RN'

@@ -9,7 +9,7 @@ export default function Experiencias() {
             </div>
             <div className='bottomPartExp'>
               <p className='description indent'>
-                Como programador profissional, conhecimento sólido em React, incluindo mas não limitado em ciclo de vida, hooks e routers. Sólido em HTML5, CSS3 e JavaScript, básico em jQuery, C# e .NET.
+                Como programador profissional, conhecimento sólido em React, incluindo mas não limitado em ciclo de vida, hooks e routers. Sólido em HTML5, CSS3 e JavaScript, básico em jQuery, C# e .NET. Além disso, possui uma experiência ao utilizar pacote de design e edição de Adobe.
               </p>
               <ul className='exibirImgComun'>
                 <ol className='itemIconExp'>

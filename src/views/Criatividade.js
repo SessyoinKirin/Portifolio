@@ -17,7 +17,6 @@ export default function Criatividade() {
     };
   }, []);
 
-
   return (
     <div className='box coluna'>
       <div className='topPartCria'>
@@ -31,19 +30,19 @@ export default function Criatividade() {
             <div className='exibirImg'>
               <div className='itemImg'>
                 <img src={require('../img/3dMaxVideo1.png')} alt='3dMax' className='imgCria' onClick={() => {
-                  window.open('https://www.instagram.com/p/CuZmAoRJ45g/', '_blank')
+                  window.open('https://www.instagram.com/reel/C2uoI17Oq2b/?utm_source=ig_web_copy_link', '_blank')
                 }} />
                 <p className='coDescription justyCenter'>Modelagem 3D Max</p>
               </div>
               <div className='itemImg'>
                 <img src={require('../img/3dMaxPremiere.png')} alt='3dMaxPR' className='imgCria' onClick={() => {
-                  window.open('https://www.instagram.com/p/CtsR7B_uOiP/', '_blank')
+                  window.open('https://www.instagram.com/reel/C2uojHVO5h2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==', '_blank')
                 }} />
                 <p className='coDescription justyCenter'>Animação 3D Max</p>
               </div>
               <div className='itemImg'>
                 <img src={require('../img/propagandaPI.png')} alt='Propaganda' className='imgCria' onClick={() => {
-                  window.open('https://www.instagram.com/p/ClYoOKnDrFW/', '_blank')
+                  window.open('https://www.instagram.com/reel/C2uoniguG4a/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==', '_blank')
                 }} />
                 <p className='coDescription justyCenter'>Propaganda de Projeto</p>
               </div>

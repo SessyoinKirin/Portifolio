@@ -16,7 +16,7 @@ export default function Experiencias() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
+  console.log('essa pagina tem uns b.o ainda')
   return (
     <div className='box coluna'>
       <div className='topPartCria'>

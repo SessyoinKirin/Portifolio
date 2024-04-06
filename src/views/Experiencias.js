@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'bootstrap'
 import '../css/portifolio.css'
 import Efeitoletrado from '../components/Efeitoletrado'
 

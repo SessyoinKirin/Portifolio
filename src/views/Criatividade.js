@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '../css/portifolio.css'
+import Efeitoletrado from '../components/Efeitoletrado';
 
 export default function Criatividade() {
   const [media, setMedia] = useState(window.innerWidth)
-  // const [swiperVisible, setSwiperVisible] = useState(false)
   useEffect(() => {
     const handleResize = () => {
       setMedia(window.innerWidth);
@@ -20,9 +20,11 @@ export default function Criatividade() {
   return (
     <div className='box coluna'>
       <div className='topPartCria'>
-        <p className='description indent'>Como um programador, minha criatividade é infinita.<br />
+        <Efeitoletrado>
+        <p className='description indent'>
           Confira meus projetos durante vida universitária abaixo.
         </p>
+        </Efeitoletrado>
       </div>
       <div className='bottomPartCria'>
         {

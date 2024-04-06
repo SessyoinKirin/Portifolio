@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/portifolio.css'
+import Efeitoletrado from '../components/Efeitoletrado'
 export default function Comunication() {
     return (
         <div className='box coluna'>
@@ -7,9 +8,11 @@ export default function Comunication() {
                 <p className='nome'>Comunicação</p>
             </div>
             <div className='bottomPartComun'>
+                <Efeitoletrado>
                 <p className='description indent'>
                     Qualquer críticas e sugestões são aceitos e bem-vindos no meu LinkedIn, confira meus demais artes em Instagram.
                 </p>
+                </Efeitoletrado>
                 <ul className='exibirImgComun'>
                     <ol className='itemIcon'>
                         <img src={require('../img/linkedin.svg').default} alt='linkedin' className='iconComun' onClick={()=>{

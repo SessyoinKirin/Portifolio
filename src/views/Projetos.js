@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '../css/portifolio.css';
+import Efeitoletrado from '../components/Efeitoletrado';
 
 export default function Projetos() {
   const [media, setMedia] = useState(window.innerWidth);
@@ -18,9 +19,11 @@ export default function Projetos() {
   return (
     <div className='box coluna'>
       <div className='topPartProj'>
+        <Efeitoletrado>
         <p className='description indent'>
           Nos projetos de TCC, sou responsável em Front-End, trabalhar com estilização da página e escrever as principais funções de hooks em React Native. Confira os projetos abaixo, ao clicá-los será redirecionado para seu repositório em Github.
         </p>
+        </Efeitoletrado>
       </div>
       <div className='bottomPartCria'>
         {

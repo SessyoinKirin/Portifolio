@@ -134,10 +134,12 @@ p {
 }
 
 .exibirImgComun {
+  height: 20vh;
   display: flex;
   flex-direction: row;
   margin: 0;
   justify-content: center;
+  align-items: center;
 }
 
 .itemIcon {
@@ -167,7 +169,7 @@ p {
 
 .itemIconExp {
   padding: 0 2vw;
-  margin-top: 9vh;
+  /* margin-top: 9vh; */
 }
 
 .iconExp {
@@ -207,6 +209,18 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.movimentation {
+}
+
+.fade-in-letter {
+  opacity: 0;
+  transition: opacity 5s ease;
+}
+
+.fade-in-letter.visible {
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -305,5 +319,13 @@ p {
   }
   .telaMenor {
     width: 21vw;
+  }
+
+  .iconExp {
+    width: auto;
+  }
+
+  .bottomPartExp {
+    width: 50vw;
   }
 }

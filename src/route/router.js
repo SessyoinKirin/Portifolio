@@ -1,13 +1,32 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { HashRouter } from 'react-router-dom'
 import Rotas from './rotas'
 import Navbar from '../components/Navbar'
+import Animation from '../components/Animation'
+
 export default function Router() {
-  
+  const [isLoading, setIsLoading] = useState(true);
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 5000); // 5 segundos
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <HashRouter>
-      <Navbar></Navbar>
-      <Rotas></Rotas>
-    </HashRouter>
+    <>
+      {isLoading && <Animation />}
+      {
+        !isLoading && (
+          <HashRouter>
+            <Navbar></Navbar>
+            <Rotas></Rotas>
+          </HashRouter>
+        )
+      }
+    </>
   )
 }

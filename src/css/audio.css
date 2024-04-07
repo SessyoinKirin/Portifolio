@@ -1,0 +1,27 @@
+.audio-player {
+  width: 10%;
+  padding: 1vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  border-radius: 10%;
+}
+
+button {
+  margin-bottom: 10px;
+}
+
+input[type="range"] {
+  width: 80%;
+}
+.icon {
+  width: 1.3vw;
+}
+.tempo {
+  font-size: 1vw;
+  margin-bottom: 0.5vw;
+}

@@ -1,3 +1,7 @@
+* {
+  margin: auto;
+  padding: auto;
+}
 .box {
   width: 70vw;
   height: 60vh;
@@ -323,9 +327,5 @@ p {
 
   .iconExp {
     width: auto;
-  }
-
-  .bottomPartExp {
-    width: 50vw;
   }
 }

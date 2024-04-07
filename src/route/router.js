@@ -11,7 +11,7 @@ export default function Router() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 5000); // 5 segundos
+    }, 6000); // 5 segundos
 
     return () => clearTimeout(timer);
   }, []);
@@ -27,6 +27,7 @@ export default function Router() {
           </HashRouter>
         )
       }
+      {/* <Animation /> */}
     </>
   )
 }
